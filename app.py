@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from PIL import Image
-import tflite_runtime.interpreter as tflite
+import tensorflow.lite as tflite
 
 app = FastAPI(title="Waste Classification API")
 
